@@ -23,7 +23,7 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="relative mx-auto w-screen max-w-xl shadow-2xl h-fit flex flex-col items-center bg-white">
+    <main className="relative mx-auto w-screen max-w-xl h-fit flex flex-col items-center bg-white">
       <Header /> {/* Header (pfp, banner, infos..) */}
       <div className="w-full px-4 md:px-16">
         <ChatTrigger />
@@ -45,7 +45,7 @@ const Home = () => {
         </nav>
       </div>
       <footer className="mt-auto py-4 text-xs text-slate-400">
-        Powered by NutriAI Card · 2026
+        Powered by NutriLink · 2026
       </footer>
     </main>
   );

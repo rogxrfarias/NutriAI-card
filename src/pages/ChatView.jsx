@@ -15,7 +15,7 @@ const WHATSAPP_URL = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent
 
 const INITIAL_MESSAGE = {
   role: "assistant",
-  content: `Olá! 👋 Sou a assistente virtual da ${CONFIG.name}.\n\nVou simular como seria o seu plano alimentar personalizado em menos de 2 minutos.\n\nPara começar: **qual é o seu principal objetivo?**`,
+  content: `Olá! 👋 Sou a assistente virtual da ${CONFIG.name}.\n\nVou te ajudar a entender melhor a alimentação do seu filho em menos de 2 minutos.\n\nPara começar: **qual é a maior dificuldade na hora das refeições?**`,
   showCTA: false,
 };
 

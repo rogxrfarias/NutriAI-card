@@ -2,13 +2,16 @@ import React from "react";
 import { ArrowRightStroke } from "@boxicons/react";
 
 const ButtonLink = ({ link, icon, title, desc }) => {
-  const handleClick = () => {
-    console.log(link);
-  };
+  // const handleClick = () => {
+  //   window.location.href = link;
+  //   console.log(link);
+  // };
 
   return (
-    <button
-      onClick={handleClick}
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
       className="relative flex flex-row rounded-xl py-3 px-3 my-4 gap-2 items-center shadow-md bg-linear-to-br from-gray-200 to-gray-50 text-slate-700 w-full text-left cursor-pointer hover:bg-linear-to-bl active:bg-linear-to-r hover:scale-105 active:scale-95 transition-all duration-300"
     >
       {/* content */}
@@ -20,7 +23,7 @@ const ButtonLink = ({ link, icon, title, desc }) => {
       <div>
         <ArrowRightStroke />
       </div>
-    </button>
+    </a>
   );
 };
 
